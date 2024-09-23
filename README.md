@@ -4,17 +4,18 @@
 
 1. Clone the repository:
 
-git clone https://github.com/jayamishraa/propacity-task-app.git
-cd propacity-task-app
+  git clone https://github.com/jayamishraa/propacity-task-app.git
+
+  cd propacity-task-app
 
 2. Install the dependencies:
 
-npm install
+  npm install
 
 3. Run the project locally:
 
-npm run dev
-The project should now be running on http://localhost:5173.
+  npm run dev
+  The project should now be running on http://localhost:5173.
 
 
 ## Technologies Used: ##
@@ -31,6 +32,8 @@ The project should now be running on http://localhost:5173.
 
 • **Font Awesome Icons**: Icon library used for displaying search icon.
 
+• **Varcel**: To deploy the project.
+
 ## APIs Used: ##
 
 • **Geocoding**: To get access to the coordinates of the city. 
@@ -45,4 +48,4 @@ The project should now be running on http://localhost:5173.
 
 ## Deployed link: ##
 
-Link1[https://propacity-task-app.vercel.app/]
+[https://propacity-task-app.vercel.app/]
