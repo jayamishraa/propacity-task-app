@@ -3,7 +3,7 @@ import React from 'react';
 const DaysContainer = ({ day, min, max, isFar, imgsrc }) => {
   const unit = isFar ? '°F' : '°C';
   return (
-    <div className='text-white rounded-lg white-shadow w-full md:w-[25vw] h-40 p-5 m-4 flex flex-col justify-center items-center bg-cover light-gradient' >
+    <div className='text-white rounded-lg white-shadow w-[85vw] md:w-[25vw] h-40 p-5 m-4 flex flex-col justify-center items-center bg-cover light-gradient z-10' >
     <p>{day}</p>
       <div className='text-center'>
         <img 

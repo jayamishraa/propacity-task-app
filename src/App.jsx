@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <div
-      className="md:flex h-screen bg-cover dark-gradient"
+      className="md:flex h-full bg-cover bg-fixed dark-gradient"
     >
       <Left
         setLatitude={setLatitude}
