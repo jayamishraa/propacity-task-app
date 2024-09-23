@@ -1,6 +1,6 @@
-## Propacity Hiring Task App ##
+# Propacity Hiring Task App #
 
-# Steps to run the project locally: #
+## Steps to run the project locally: ##
 
 1. Clone the repository:
 
@@ -18,7 +18,7 @@
   The project should now be running on http://localhost:5173.
 
 
-# Technologies Used: #
+## Technologies Used: ##
 
 • **ReactJS**: Front-end JavaScript library for building user interfaces.
 
@@ -34,7 +34,7 @@
 
 • **Varcel**: To deploy the project.
 
-# APIs Used: #
+## APIs Used: ##
 
 • **Geocoding**: To get access to the coordinates of the city. 
 [https://openweathermap.org/api/geocoding-api]
@@ -46,6 +46,6 @@
 [https://openweathermap.org/forecast5]
 
 
-# Deployed link: #
+## Deployed link: ##
 
 [https://propacity-task-app.vercel.app/]
