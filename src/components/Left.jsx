@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Search from './Search'; 
-import darkbluegradient from '../assets/gradient.avif'
 
 const Left = ({ setLatitude, setLongitude, apiData, isFar }) => {
   const [currentDate, setCurrentDate] = useState('');
@@ -24,14 +23,14 @@ const Left = ({ setLatitude, setLongitude, apiData, isFar }) => {
   // console.log(apiData?.weather?.icon);
 
   return (
-  <div className="md:w-[30vw] bg-[#ffffff] p-5 flex flex-col items-center justify-center bg-cover" style={{ backgroundImage: `url(${darkbluegradient})`}}>
+  <div className="md:w-[30vw] bg-[#ffffff] p-5 flex flex-col items-center justify-center bg-cover" style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
     <Search setLatitude={setLatitude} setLongitude={setLongitude} />
       <img
         src={`https://openweathermap.org/img/wn/${apiData?.weather[0]?.icon}@2x.png`}
         alt="Weather Icon"
-        className='p-3 opacity-0 md:opacity-100 h-40'
+        className='p-3 h-40'
       />
-      <p className='mt-[-150px] mb-[-30px] md:mb-0 md:mt-0 text-5xl p-3 text-white'>
+      <p className=' md:mb-0 md:mt-0 text-5xl p-3 text-white'>
         {apiData?.main?.temp ? `${apiData.main.temp} ${unit}` : 'Loading...'}
       </p>
 

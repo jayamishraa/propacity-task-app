@@ -1,10 +1,9 @@
 import React from 'react';
-import darkbluegradient from '../assets/gradient.avif'
 
 const DaysContainer = ({ day, min, max, isFar, imgsrc }) => {
   const unit = isFar ? '°F' : '°C';
   return (
-    <div className='text-white bg-white rounded-lg white-shadow w-full md:w-[25vw] h-40 p-5 m-4 flex flex-col justify-center items-center' style={{ backgroundImage: `url(${darkbluegradient})`}}>
+    <div className='text-white rounded-lg white-shadow w-full md:w-[25vw] h-40 p-5 m-4 flex flex-col justify-center items-center bg-cover light-gradient' >
     <p>{day}</p>
       <div className='text-center'>
         <img 

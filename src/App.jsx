@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Left from './components/Left';
 import Right from './components/Right';
 import axios from 'axios';
+import darkbluegradient from '../src/assets/nightsky.jpg';
 
 const App = () => {
   const [latitude, setLatitude] = useState('51.5073219');
   const [longitude, setLongitude] = useState('-0.1276474');
   const [isFar, setIsFar] = useState(false);
-  const [apiData, setApiData] = useState()
+  const [apiData, setApiData] = useState();
 
   useEffect(() => {
     handleAPIData(); 
@@ -26,14 +27,16 @@ const App = () => {
   };
 
   return (
-    <div className="md:flex h-screen">
-      <Left 
+    <div
+      className="md:flex h-screen bg-cover dark-gradient"
+    >
+      <Left
         setLatitude={setLatitude}
         setLongitude={setLongitude}
         apiData={apiData}
         isFar={isFar}
       />
-      <Right 
+      <Right
         latitude={latitude}
         longitude={longitude}
         apiData={apiData}

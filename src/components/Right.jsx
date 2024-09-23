@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import ToggleButton from './ToggleButton';
 import axios from 'axios';
 import DaysContainer from './DaysContainer';
+import darkbluegradient from '../assets/starrysky.png'
+
 
 const Right = ({ latitude, longitude, apiData, setIsFar, isFar }) => {
   const [weekApiData, setWeekApiData] = useState([]);
@@ -31,7 +33,7 @@ const Right = ({ latitude, longitude, apiData, setIsFar, isFar }) => {
   };
 
   return (
-    <div className="md:w-[70vw] bg-[#121111] p-5 flex flex-col justify-center">
+    <div className="md:w-[70vw] p-5 flex flex-col justify-center " >
       <div className='flex items-center justify-between'>
         <h2 className='ml-5 text-xl font-medium text-white'>Today's Highlights</h2>
         <ToggleButton
